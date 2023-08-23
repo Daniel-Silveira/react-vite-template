@@ -4,7 +4,6 @@ export default {
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
   moduleNameMapper: {
-    '@/services/(.*)': '<rootDir>/src/services/$1',
     '@/components/(.*)': '<rootDir>/src/components/$1',
     '@/pages/(.*)': '<rootDir>/src/pages/$1',
     '@/hooks/(.*)': '<rootDir>/src/hooks/$1',
