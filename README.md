@@ -1,27 +1,63 @@
-# React + TypeScript + Vite
+# Template React com Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um template para projetos React com Vite, totalmente configurado em TypeScript. Ele vem pré-configurado com uma série de recursos para acelerar o desenvolvimento, facilitando o início de um novo projeto.
 
-Currently, two official plugins are available:
+## 🚀 Recursos Inclusos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Vite** para uma experiência de desenvolvimento mais rápida e eficiente.
+- **React Router Dom**: Ferramenta essencial para adicionar navegação entre componentes, permitindo roteamentos dinâmicos e ágeis.
+- **TypeScript**: Adiciona tipagem estática ao JavaScript, melhorando a qualidade, legibilidade e prevenção de erros no código.
+- **Jest** e **Testing Library**: Combinação robusta para realizar testes unitários e de componentes, garantindo que sua aplicação funcione como esperado.
+- **Husky**: Automatiza tarefas e ações usando hooks de git, assegurando que commits e pushes atendam aos padrões estabelecidos.
+- **Axios**: para requisições HTTP.
+- **Styled Components**: Abordagem moderna para estilização, permitindo que você use estilos CSS diretamente em seus componentes JavaScript.
+- **ESLint**: Analisa e corrigi o código para identificar e resolver problemas, promovendo práticas de codificação consistentes e de alta qualidade.
 
-## Expanding the ESLint configuration
+## 🏁 Como começar
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Clone este repositório**
 
-- Configure the top-level `parserOptions` property like this:
+   ```bash
+   git clone https://github.com/Daniel-Silveira/react-vite-template.git my-project
+   cd my-project
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Instale as dependências**
+
+   ```bash
+   npm install
+   ```
+
+   **Ou usando yarn:**
+
+   ```bash
+   yarn
+   ```
+
+3. **Rode o projeto**
+
+   ```bash
+   npm run dev
+   ```
+
+   **Ou usando yarn:**
+
+   ```bash
+   yarn dev
+   ```
+
+   O projeto será iniciado na porta 5173. Certifique-se de que esta porta esteja disponível ou ajuste a configuração conforme necessário.
+
+
+## 📋 Comandos disponíveis
+- `dev`: Roda o projeto em modo de desenvolvimento.
+- `build`: Compila o projeto para produção.
+- `preview`: Executa o projeto a partir dos arquivos gerados pelo `build`.
+- `test`: Roda os testes unitários com Jest.
+- `lint`: Analisa o código para identificar e corrigir problemas com base nas regras do ESLint.
+
+## 💡 Dicas
+- Para criar uma nova página, simplesmente adicione um novo arquivo na pasta `pages`.
+- Utilize os imports alias para facilitar na hora de importar componentes, hooks, entre outros.
+- Mantenha seus testes atualizados. Eles são uma grande ajuda para garantir que tudo está funcionando corretamente.
